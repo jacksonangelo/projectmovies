@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/death.png" type="image/x-icon" />
+    <title>PirateFlix | Melhores Filmes e Séries</title>
+
+    <!-- Icones -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+    </svg>
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">Pirate<span>Flix</span>.</a>
+
+     <!-- início barra de pesquisa -->
+     <div class="topo-pesquisa">
+      <div class="conteudo-pesquisa">
+        <form class="conteudo-flex" method="post">
+        <fieldset class="bar-pesquisa">
+          <input type="text" id="tituloId" placeholder="Pesquisar um filme ou série..." alt="Digite aqui um filme ou série para pesquisar">
+        </fieldset>
+        <fieldset class="btn-pesquisar conteudo-flex">
+          <button type="button" id="botao" title="Pesquisar">
+            <span class=""><img src="../assets/fonts/fonts/magnifying_glass.svg"></span>
+          </button>
+        </fieldset>
+      </form>
+      </div>
+    </div>
+  </div>
+   <!-- fim da barra de pesquisa -->        
+
+        <!-- Fim menu de pesquisa -->
+        <!-- menu -->
+        <div class="menu" id="manu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#filmes">Filmes</a></li>
+            <li><a class="title" href="#animes">Animes</a></li>
+            <li><a class="title" href="#testimonials">Séries</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+      <!----Inicio Resposta da Pesquisa da API  ----->
+      
+        <div class="detalhes">                   
+        </div>     
+        
+      <!----Fim Resposta da Pesquisa da API  ----->
+
+    <!-- Inicio Bootraap-->
+
+   <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./image/2d786a0a-bfbf-4ad6-aa6d-d4286e3f8709-rev-1-JM-FP-0060_High_Res_JPEG-2.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lançamentos 2023</h5>
+            <p>Veja em qualquer lugar. Cancele quando quiser.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./image/maxresdefault.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lançamentos 2023</h5>
+            <p>Veja em qualquer lugar. Cancele quando quiser.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./image/mariojpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lançamentos 2023</h5>
+            <p>Veja em qualquer lugar. Cancele quando quiser.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+<!-- Fim Bootraap-->
+
+    <section class="section" id="home">
+      <div class="container grid">
+        <div class="image">
+          <img
+            src="./image/catalogojpg"
+            alt="Psicólogo sorrindo segurando uma bola"
+          />
+        </div>
+        <div class="text">
+          <h2 class="title">Promoção 1 ano grátis PirateFlix!</h2>
+          <p>
+            VÁLIDO POR TEMPO LIMITADO
+          </p>
+          <a class="button" target="_blank" href="./pages/01-filme.html">Assista grátis por um ano</a>
+        </div>
+      </div>
+    </section>
+
+   <section class="section" id="filmes">
+      <header>
+        <h2 class="title">FILMES</h2>
+      </header>
+
+    <div class="container grid" class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col-md-3">
+          <img src="./image/Titanic_poster.jpg" class="bg-image hover-zoom" class="card-img-top" class="img-fluid" alt="capa filme">
+        </div>
+      
+
+      <div class="col-md-3">
+        <img src="./image/spiderman.jpg" class="image" class="card-img-top"class="img-fluid" alt="capa filme">
+      </div>
+
+    <div class="col-md-3">
+      <img src="./image/tempo.webp" class="image"class="card-img-top"class="img-fluid" alt="capa filme">
+    </div>
+
+    <div class="col-md-3">
+      <img src="./image/fragmentado.jpg" class="image" class="card-img-top"class="img-fluid" alt="capa filme">
+    </div>
+   
+ 
+    <div class="col-md-3">
+      <img src="./image/auto.jpg" class="image" class="card-img-top"class="img-fluid" alt="capa filme">
+    </div>
+
+
+    <div class="col-md-3">
+      <img src="./image/Man.jpg" class="image" class="card-img-top"class="img-fluid" alt="capa filme">
+    </div>
+
+
+    <div class="col-md-3">
+      <img src="./image/lagoa.webp" class="image" class="card-img-top"class="img-fluid" alt="capa filme">
+    </div>
+
+
+    <div class="col-md-3">
+        <img src="./image/morbius.jpeg" class="image" class="card-img-top" class="img-fluid" alt="capa filme"> 
+    </div>
+    
+    </div>
+   </div>
+
+   </section>
+
+   <!-- Fim Section Filmes -->
+  
+
+
+    <main>     
+
+      <div class="divider-1"></div>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="./image/flix.webp"
+              alt="..."
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Veja a PirateFlix no seu televisor.</h2>
+            <p>
+              Smart TVs, Playstation, Xbox, Chromecast, 
+              <br />
+              Apple TV, leitores de Blu-ray e muito mais.
+            </p>
+            <br />
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- ANIMES -->
+      <section class="section" id="animes">
+        <div class="container grid">
+          <header>
+            <h2 class="title">ANIMES</h2>
+          </header>
+          <div class="cards grid">
+            <div class="card" id="card-1">
+              <a target="_blank" href="./pages/02-filme.html">
+                <img 
+                src="./image/naruto.JPG"
+                alt="capa naruto"
+                class="icon-woman-hair"/>
+              </a>
+              <h3 class="title">Naruto</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+            <div class="card" id="card-2">
+              <a target="_blank" href="./pages/02-filme.html">
+                <img 
+                src="./image/sword.webp"
+                alt="capa sword art online"
+                class="icon-woman-hair"/>
+              </a>
+              <h3 class="title">Sword Art Online</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+            <div class="card" id="card-3">
+              <a target="_blank" href="./pages/02-filme.html">
+                <img 
+                src="./image/dragonball.jpg"
+                alt="capa dragon ball"
+                class="icon-woman-hair"/>
+              </a>
+              <h3 class="title">Dragon Ball Z</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+
+            <div class="card" id="card-4">
+              <a target="_blank" href="./pages/02-filme.html">
+                <img 
+                src="./image/puchman.jpg"
+                alt="capa done puch man"
+                class="icon-woman-hair"/>
+              </a>
+              <h3 class="title">One Puch Man</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+
+            <div class="card" id="card-5  ">
+              <a target="_blank" href="./pages/02-filme.html">
+                <img 
+                src="./image/kaisen.webp"
+                alt="capa jujutsu kaisen"
+                class="icon-woman-hair"/>
+              </a>
+              <h3 class="title">Jujutsu Kaisen</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+
+            <div class="card" id="card-6">
+              <a target="_blank" href="./pages/02-filme.html">
+                <img 
+                src="./image/deathnote.webp"
+                alt="capa death note"
+                class="icon-woman-hair"/>
+              </a>
+              <h3 class="title">Death Note</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <!-- TESTIMONIALS -->
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">As suas Séries Favoritas passam Aqui!</h2>
+          </header>
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide" class="series">
+                <img src="./image/blinders.jpg" alt="capa serie peaky blinders">
+
+              </div>
+
+              <div class="testimonial swiper-slide" class="series">
+                <img src="./image/TheSandman.jpg" alt="capa serie peaky blinders">
+
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <img src="./image/Suits.jpg" alt="capa serie peaky blinders">
+
+              </div>
+
+              <div class="testimonial swiper-slide" class="series">
+                <img src="./image/smallville-poster.webp" alt="capa serie peaky blinders">
+
+              </div>
+
+
+              <div class="testimonial swiper-slide" class="series">
+               <img src="./image/eupatroa.jpeg" alt="capa serie peaky blinders">
+              </div>
+
+              <div class="testimonial swiper-slide" class="series">
+                <img src="./image/titãs-1.jpg" alt="capa serie peaky blinders">
+               </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Pirateflix é um serviço de streaming que oferece uma grande variedade de séries de televisão, filmes, 
+              títulos de animé, documentários e outros conteúdos premiados que podem ser vistos em milhares de dispositivos com uma ligação à internet.
+            </p>
+            <a
+              href="./pages/01-filme.html"
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i> Ligue 0000 000 000</li>
+              <li><i class="icon-map-pin"></i>Portugal</li>
+              
+              <li><i class="icon-woman-hair"></i>www.pirateflix.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Pirate<span>Flix</span>.</a>
+          <p>©2023 PirateFlix</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- swiper manutenção
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+-->
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="main.js"></script>
+    <script src="./js/films.js"></script>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

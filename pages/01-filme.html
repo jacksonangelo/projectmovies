@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../image/death.png" type="image/x-icon" />
+    <title>PirateFlix | Melhores Filmes e Séries</title>
+
+    <!-- Icones -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+    </svg>
+    <link rel="stylesheet" href="../assets/fonts/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../style.css" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="../index.html">Pirate<span>Flix</span>.</a>
+
+     <!-- início barra de pesquisa -->
+     <div class="topo-pesquisa">
+      <div class="conteudo-pesquisa">
+        <form class="conteudo-flex" method="post">
+        <fieldset class="bar-pesquisa">
+          <input type="text" id="tituloId" placeholder="Pesquisar um filme ou série..." alt="Digite aqui um filme ou série para pesquisar">
+        </fieldset>
+        <fieldset class="btn-pesquisar conteudo-flex">
+          <button type="button" id="botao" title="Pesquisar">
+            <span class=""><img src="../assets/fonts/fonts/magnifying_glass.svg"></span>
+          </button>
+        </fieldset>
+      </form>
+      </div>
+    </div>
+   <!-- fim da barra de pesquisa -->
+
+          
+      </div>
+   
+        <!-- Fim menu de pesquisa -->
+        <!-- menu -->
+        <div class="menu" id="manu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#animes">Animes</a></li>
+            <li><a class="title" href="#testimonials">Séries</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <!----Inicio Resposta da Pesquisa da API  ----->
+      
+      <div class="detalhes">                   
+      </div>     
+      
+    <!----Fim Resposta da Pesquisa da API  ----->
+
+    <main>     
+        <!-- início contéudo principal -->
+  <div class="conteudo-principal">
+
+    <div class="primeiro-h1">
+      <h1>Fale com a gente!</h1>
+    </div>
+
+    <!-- início elemento -->
+
+    <div class="elementos conteudo-flex">
+
+      <div class="form-mapa conteudo-flex">
+
+        <!-- inínicio formulário -->
+        <div class="formulario">
+          <form class="form-contato" method="post">
+
+            <div class="dados-user" class="icon">
+              <div class="icone-contato conteudo-flex">
+                <span class="icon"><img src="../assets/fonts/fonts/profile-user.png" alt=""></span>
+              </div>
+              <fieldset>
+                  <input type="text" id="nome" placeholder="Nome" class="user" required autofocus>
+              </fieldset>
+            </div>
+
+            <div class="dados-user" class="icon">
+              <div class="icone-contato conteudo-flex">
+                <span class="icon"><img src="../assets/fonts/fonts/email.png" alt=""></span>
+              </div>
+              <fieldset>
+                  <input type="email" id="email" placeholder="Email" class="email" required>
+              </fieldset>
+            </div>
+
+            <div class="dados-user" class="icon">
+              <div class="icone-contato conteudo-flex">
+                <span class="icon"><img src="../assets/fonts/fonts/phone-call.png" alt=""></span>
+              </div>
+              <fieldset>
+                <input type="tel" id="telefone" placeholder="Telefone" class="telefone" required>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <select name="assunto" id="assunto" required>
+                  <option select selected disabled>Selecione o assunto</option>
+                  <option value="0">Dúvidas</option>
+                  <option value="1">Sugestões</option>
+                  <option value="2">Reclamações</option>
+                  <option value="3">Financeiro</option>
+                  <option value="4">Suporte</option>
+                  <option value="5">Ouvidoria</option>
+                  <option value="6">Outras informações</option>
+                </select>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <button type="submit" id="botao" title="Enviar">Enviar</button>
+              </fieldset>
+            </div>
+
+          </form>
+        </div>
+        <!-- fim formulário -->
+
+        <!-- início mapa -->
+        <div class="mapa">
+          <div class="embed-mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.84302934144!2d-46.625640385022!3d-23.574080484676525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597ac07fc4db%3A0x2082237196d0d781!2sAv.%20Lins%20de%20Vasconcelos%2C%201222%20-%20Cambuci%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001538-001!5e0!3m2!1spt-BR!2sbr!4v1587329886866!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+          </div>
+        </div>
+        <!-- fim mapa -->
+
+      </div>
+
+     
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Pirate<span>Flix</span>.</a>
+          <p>©2023 PirateFlix</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="../main.js"></script>
+    <script src="../js/films.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

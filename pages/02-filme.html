@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../image/death.png" type="image/x-icon" />
+    <title>PirateFlix | Melhores Filmes e Séries</title>
+
+    <!-- Icones -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-chrome" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+    </svg>
+    <link rel="stylesheet" href="../assets/fonts/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../style.css" />
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="../index.html">Pirate<span>Flix</span>.</a>
+     <!-- início barra de pesquisa -->
+      <div class="topo-pesquisa">
+        <div class="conteudo-pesquisa">
+          <form class="conteudo-flex" method="post">
+          <fieldset class="bar-pesquisa">
+            <input type="text" id="tituloId" placeholder="Pesquisar um filme ou série..." alt="Digite aqui um filme ou série para pesquisar">
+          </fieldset>
+          <fieldset class="btn-pesquisar conteudo-flex">
+            <button type="button" id="botao" title="Pesquisar">
+              <span class=""><img src="../assets/fonts/fonts/magnifying_glass.svg"></span>
+            </button>
+          </fieldset>
+        </form>
+        </div>
+      </div>
+     <!-- fim da barra de pesquisa -->
+   
+        <!-- Fim menu de pesquisa -->
+        <!-- menu -->
+        <div class="menu" id="manu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#filmes">Filmes</a></li>
+            <li><a class="title" href="#animes">Animes</a></li>
+            <li><a class="title" href="#testimonials">Séries</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!----Inicio Resposta da Pesquisa da API  ----->
+      
+    <div class="detalhes">                   
+    </div>     
+
+      <!----Fim Resposta da Pesquisa da API  ----->
+        <!-- início contéudo principal -->
+  <div class="conteudo-principal">
+
+    <div class="primeiro-h1">
+      <h1>Assista a todos os Lançamentos!</h1>
+    </div>
+
+    <!-- início elemento -->
+
+    <div class="elementos conteudo-flex">
+
+      <div class="form-mapa conteudo-flex">
+
+      <!-- início banner -->
+     
+      <div class="banner">
+        <a href=""><img src="../image/season-2.webp" alt="modelo banner de filme" class="banner2" title="modelo banner de filme"></a>
+      </div>
+    
+
+        <div class="banner">
+          <a href=""><img src="../image/season3.jpg" alt="modelo banner de filme" class="banner2" title="modelo banner de filme"></a>
+        </div>
+      
+      <!-- fim banner -->
+  
+      <!-- início elemento -->
+      <div class="elementos conteudo-flex">
+        <div class="poster-play">
+          <div>
+            <img src="../image/damonslayer.jpg" alt="imagem modelo poster de série" title="imagem modelo poster de série">
+          </div>
+          <div>
+            <button type="button" class="btn-assistir" id="btn-assistir" title="Assistir"><span class="fas fa-play"></span>Assistir</button>
+          </div>
+        </div>
+  
+        <div class="info-play">
+          <h2>Damon Salayer</h2>
+          <p class="info-play-ano">2020 | Temporada 1</p>
+          <p><a href="#">Drama</a></p>
+          <p><em>Direção: </em><a href="#">Johan Lorem</a></p>
+          <p><em>Sinopse: </em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p><em>Elenco: </em><a href="#">Jared Lorem</a>, <a href="#">Stellan Lorem</a>, <a href="#">Paul Lorem</a>, <a href="#">Jessie Lorem</a></p>
+        </div>
+      </div>
+      <!-- fim elemento -->
+
+   <!-- ANIMES -->
+   <section class="section" id="animes">
+    <div class="container grid">
+      <header>
+        <h2 class="title">ANIMES</h2>
+      </header>
+      <div class="cards grid">
+        <div class="card" id="card-1">
+          <img 
+          src="../image/naruto.JPG"
+          alt="capa naruto"
+          class="icon-woman-hair"/>
+          <h3 class="title">Naruto</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            distinctio neque blanditiis, dolorem aperiam nulla explicabo
+            asperiores
+          </p>
+        </div>
+        <div class="card" id="card-2">
+          <img 
+          src="../image/sword.webp"
+          alt="capa sword art online"
+          class="icon-woman-hair"/>
+          <h3 class="title">Sword Art Online</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            distinctio neque blanditiis, dolorem aperiam nulla explicabo
+            asperiores
+          </p>
+        </div>
+        <div class="card" id="card-3">
+          <img 
+          src="../image/dragonball.jpg"
+          alt="capa dragon ball"
+          class="icon-woman-hair"/>
+          <h3 class="title">Dragon Ball Z</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            distinctio neque blanditiis, dolorem aperiam nulla explicabo
+            asperiores
+          </p>
+        </div>
+
+        <div class="card" id="card-4">
+          <img 
+          src="../image/puchman.jpg"
+          alt="capa done puch man"
+          class="icon-woman-hair"/>
+          <h3 class="title">One Puch Man</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            distinctio neque blanditiis, dolorem aperiam nulla explicabo
+            asperiores
+          </p>
+        </div>
+
+        <div class="card" id="card-5  ">
+          <img 
+          src="../image/kaisen.webp"
+          alt="capa jujutsu kaisen"
+          class="icon-woman-hair"/>
+          <h3 class="title">Jujutsu Kaisen</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            distinctio neque blanditiis, dolorem aperiam nulla explicabo
+            asperiores
+          </p>
+        </div>
+
+        <div class="card" id="card-6">
+          <img 
+          src="../image/deathnote.webp"
+          alt="capa death note"
+          class="icon-woman-hair"/>
+          <h3 class="title">Death Note</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            distinctio neque blanditiis, dolorem aperiam nulla explicabo
+            asperiores
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="video">
+    <div class="embed-vid">
+      <iframe src="https://www.youtube.com/embed/3iDIdua0yy8"></iframe>
+    </div>
+  </div>
+  <div class="video">
+    <div class="embed-vid">
+      <iframe src="https://www.youtube.com/embed/csJeJ8Af53k"></iframe>
+    </div>
+  </div>
+
+    </div>
+    <!-- fim conteúdo principal -->
+
+      </div>
+
+     
+    </main>
+
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">Pirate<span>Flix</span>.</a>
+          <p>©2023 PirateFlix</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://instagram.com" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank"
+            ><i class="icon-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
+    <script src="../main.js"></script>
+    <script src="../js/films.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

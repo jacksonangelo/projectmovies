@@ -1,0 +1,1 @@
+export const chave = 'apikey=f29c9eef';
