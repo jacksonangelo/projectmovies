@@ -8,8 +8,8 @@ const cardTemplate = (imagePath, title, releaseDate, voteAverage) => {
   const releaseDateFormatted = new Date(releaseDate).toLocaleDateString();
 
   return `
-    <div class="card">
-      <img src="${imageUrl}${imagePath}" />
+    <div class="image">
+      <img class="image" src="${imageUrl}${imagePath}" />
       <div class="description">
         <h2 class="title">${title}</h2>
         <p class="release-date">Data: ${releaseDateFormatted}</p>

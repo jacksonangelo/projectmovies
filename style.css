@@ -501,7 +501,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-/* -------------- CONTATO -------------- */
+/* -------------- CONTATO pag -------------- */
 
 .formulario{
   width: 40%;
@@ -530,8 +530,8 @@ img {
 }
 
 .icone-contato {
-  width: 10%;
-  height: 3vmax;
+  width: 5%;
+  height: 5%;
   background: rgba(255, 255, 255, 0);
   border: 1px solid #fff;
   font-size: 1.5vmax;
@@ -886,6 +886,13 @@ transition: 1s ease;
   background: var(--base-color);
 }
 
+/* medium devices: 767 > */
+@media (max-width: 567px) {
+  .testimonials {
+   display: none;
+  }
+}
+
 /*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
@@ -988,8 +995,8 @@ footer .logo:hover {
  }
 
 /*========= MEDIA QUERIES =========*/
-/* extra large devices: 1200 > */
-@media (min-width: 1200px) {
+/* extra large devices: 767 > */
+@media (min-width: 767px) {
   /* reusable classes */
   .container {
     max-width: 1120px;
@@ -1124,6 +1131,13 @@ footer .logo:hover {
   display: flex;
   justify-content: center;
 }
+/* medium devices: 767 > */
+@media (max-width: 567px) {
+  .topo-pesquisa{
+   display: none;
+  }
+}
+
 
 .conteudo-pesquisa{
   width: 90%;
@@ -1159,4 +1173,7 @@ fieldset {
 
 .btn-pesquisar button{
   color: #585858;
+}
+#botao{
+  border: 0;
 }
